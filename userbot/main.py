@@ -39,13 +39,13 @@ DIZCILIK_STR = [
 ]
 
 ALIVE_MESAJ = [
-    "**Canım Gözüm** {mention} ❤️ \n 🐺`BozQurd işləyir...`",
-    "😍**Səni unutdum sanma** {mention} 🐺`BozQurd işləyir...`",
-    "😈**Narahat olma** {mention} 🐺`BozQurd işləyir...`",
-    "🇦🇿🇹🇷 **Bizim Qanımız Türk Qanıdır** {mention} \n 🐺`BozQurd işləyir...`",
-    "{mention} **Bu** 🌹-ü **Səninçün Alp dağlarından gətirdim**😍 \n 🐺`BozQurd İşləyir...`",
-    "{mention} **Sən .alive yazarkən mən bunu səninçün hazırladım** (⊃｡•́‿•̀｡)⊃━✿✿✿✿✿✿ 😍\n🐺`BozQurd işləyir...`",
-    "{mention} **Gecə-Gündüz fasiləsiz xidmətindəyəm**😎\n🐺`BozQurd işləyir...`",
+    "**Canım Gözüm** {mention} ❤️ \n 👾`Misako işləyir...`",
+    "😍**Səni unutdum sanma** {mention} 👾`Misaki işləyir...`",
+    "😈**Narahat olma** {mention} 👾`Misaki işləyir...`",
+    "🇦🇿🇹🇷 **Bizim Qanımız Türk Qanıdır** {mention} \n 👾`Misaki işləyir...`",
+    "{mention} **Bu** 🌹-ü **Səninçün Alp dağlarından gətirdim**😍 \n 👾`Misaki İşləyir...`",
+    "{mention} **Sən .alive yazarkən mən bunu səninçün hazırladım** (⊃｡•́‿•̀｡)⊃━✿✿✿✿✿✿ 😍\n👾`Misaki işləyir...`",
+    "{mention} **Gecə-Gündüz fasiləsiz xidmətindəyəm**😎\n👾`Misaki işləyir...`",
 ]
 
 AFKSTR = [
@@ -74,7 +74,7 @@ AFKSTR = [
 UNAPPROVED_MSG = ("`Hey,` {mention}`! Bu bir bot. Narahat olma.\n\n`"
                   "`Sahibim sənə PM atma icazəsi verməyib. `"
                   "`Zəhmət olmasa sahibimin aktiv olmağını gözləyin, o adətən PM'ləri qəbul edir.\n\n`"
-                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@BozQurdResmi")
+                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@MisakiUserBot")
 
 DB = connect("learning-data-root.check")
 CURSOR = DB.cursor()
@@ -125,8 +125,8 @@ def extractCommands(file):
                             KomutStr = Command
                         Komutlar.append(KomutStr)
 
-            # BozQurd
-            Bozqurdpy = re.search('\"\"\"BOZQURDPY(.*)\"\"\"', FileRead, re.DOTALL)
+            # MISAKI
+            Bozqurdpy = re.search('\"\"\"MISAKIPY(.*)\"\"\"', FileRead, re.DOTALL)
             if not Bozqurdpy == None:
                 Bozqurdpy = Bozqurdpy.group(0)
                 for Satir in Bozqurdpu.splitlines():
