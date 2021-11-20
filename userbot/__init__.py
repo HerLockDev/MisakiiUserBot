@@ -58,7 +58,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # BozQurd Version
-BOZQURD_VERSION = "v1.0"
+MISAKI_VERSION = "v1.0"
 
 # Telegram API KEY ve HASH
 API_KEY = os.environ.get("API_KEY", None)
