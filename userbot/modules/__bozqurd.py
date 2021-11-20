@@ -14,11 +14,11 @@ from userbot.events import register as bozqurd
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__bozqurd")
+LANG = get_value("__misaki")
 
 # ████████████████████████████████ #
 
-@bozqurd(outgoing=True, pattern="^.bozqurd(?: |$)(.*)")
+@bozqurd(outgoing=True, pattern="^.misaki(?: |$)(.*)")
 async def bozqurd(event):
     """ necesen """
     args = event.pattern_match.group(1).lower()
@@ -32,7 +32,7 @@ async def bozqurd(event):
         sayfa = [sorted(list(CMD_HELP))[i:i + 5] for i in range(0, len(sorted(list(CMD_HELP))), 5)]
         
         for i in sayfa:
-            string += f'`▶️ `'
+            string += f'`▶️`'
             for sira, a in enumerate(i):
                 string += "`" + str(a)
                 if sira == i.index(i[-1]):
